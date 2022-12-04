@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainViewController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="227.0" style="-fx-background-color: darkblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="69.0" layoutY="55.0" prefHeight="42.0" prefWidth="89.0" text="Pizzeria" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Line endX="80.5" layoutX="116.0" layoutY="105.0" startX="-78.5" stroke="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Line>
+            <Label layoutX="13.0" layoutY="118.0" prefHeight="27.0" prefWidth="209.0" text="Probably the best pizza in town" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font>
+            </Label>
+            <Circle fill="WHITE" layoutX="69.0" layoutY="76.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle1" fill="#01197c" layoutX="114.0" layoutY="275.0" radius="87.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 50;" />
+            <Circle fx:id="circle2" fill="#041c7c" layoutX="114.0" layoutY="275.0" radius="59.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 60;" />
+            <Circle fx:id="circle3" fill="#011b83" layoutX="114.0" layoutY="275.0" radius="34.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 50;" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="379.0" style="-fx-background-color: lightblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="loginButton" layoutX="135.0" layoutY="187.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="27.0" prefWidth="119.0" style="-fx-background-color: darkblue;" text="Login" textFill="WHITE" />
+            <Label layoutX="141.0" layoutY="33.0" text="Secure Login :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="132.0" text="UserPassword :" />
+            <Label layoutX="30.0" layoutY="99.0" text="EmailAddress :" />
+            <TextField fx:id="emailTextField" layoutX="159.0" layoutY="95.0" promptText="Email :" />
+            <PasswordField fx:id="passwordTextField" layoutX="159.0" layoutY="128.0" promptText="Password :" />
+            <Button fx:id="seeMenuButton" layoutX="158.0" layoutY="313.0" mnemonicParsing="false" onAction="#seeMenuButtonOnAction" style="-fx-background-color: darkblue;" text="See Menu" textFill="WHITE" />
+            <Label layoutX="37.0" layoutY="276.0" text="To order without creating account click :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="cancelButton" layoutX="303.0" layoutY="360.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" style="-fx-background-color: darkblue;" text="Cancel" textFill="WHITE" />
+            <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="54.0" layoutY="62.0" prefHeight="24.0" prefWidth="282.0" textFill="RED" />
+            <Button fx:id="signUpButton" layoutX="135.0" layoutY="224.0" mnemonicParsing="false" onAction="#signUpButtonOnAction" prefHeight="27.0" prefWidth="119.0" style="-fx-background-color: darkblue;" text="Sign Up" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

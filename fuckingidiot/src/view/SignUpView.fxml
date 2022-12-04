@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SignUpViewController">
+   <children>
+      <Button fx:id="backButton" layoutX="18.0" layoutY="366.0" mnemonicParsing="false" onAction="#backButtonOnAction" style="-fx-background-color: black;" text="Back" textFill="WHITE" />
+      <Label layoutX="167.0" layoutY="28.0" text="Create user :">
+         <font>
+            <Font name="Verdana" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="createUserButton" layoutX="327.0" layoutY="344.0" mnemonicParsing="false" onAction="#createUser" prefHeight="44.0" prefWidth="139.0" style="-fx-background-color: black;" text="Create Account" textFill="WHITE" />
+      <Label layoutX="36.0" layoutY="86.0" prefHeight="23.0" prefWidth="88.0" text="First name :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="126.0" prefHeight="23.0" prefWidth="88.0" text="Last name :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="210.0" text="Email :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="171.0" prefHeight="23.0" prefWidth="88.0" text="Password :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstNameTextField" layoutX="247.0" layoutY="85.0" promptText="First Name" />
+      <TextField fx:id="lastNameTextField" layoutX="247.0" layoutY="125.0" promptText="Last Name" />
+      <TextField fx:id="emailTextField" layoutX="247.0" layoutY="208.0" promptText="Email address" />
+      <PasswordField fx:id="addressTextField" layoutX="247.0" layoutY="250.0" promptText="Address for delivery" />
+      <Label layoutX="36.0" layoutY="251.0" text="Address for delivery :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordTextField" layoutX="247.0" layoutY="170.0" promptText="Password " />
+      <VBox layoutX="472.0" layoutY="-1.0" prefHeight="407.0" prefWidth="128.0" style="-fx-background-color: black;" />
+      <Label fx:id="createMessageLabel" layoutX="82.0" layoutY="351.0" prefHeight="30.0" prefWidth="222.0" textFill="RED" />
+      <TextField fx:id="phoNumberTextField" layoutX="247.0" layoutY="291.0" promptText="Use 45 before number" />
+      <Label layoutX="36.0" layoutY="290.0" prefHeight="23.0" prefWidth="160.0" text="Phone number :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
